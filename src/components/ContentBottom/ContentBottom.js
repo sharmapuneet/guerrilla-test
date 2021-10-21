@@ -14,6 +14,11 @@ const useStyles = makeStyles((theme) => ({
   subText: {
     color: "#BDBDBD",
     paddingTop: 40
+  },
+  image: {
+    [theme.breakpoints.down("xs")]: {
+      width: "100%"
+    }
   }
 }));
 
@@ -24,7 +29,7 @@ const ContentBottom = () => {
     <div className={classes.root}>
       <Grid container justifyContent="space-between">
         <Grid item xs={12} sm={7}>
-          <img src={leftBg} style={{ width: "100%" }}/>
+          <img src={leftBg} className={classes.image} />
         </Grid>
         <Grid item xs={12} sm={5}>
           <Typography variant="h3" className={classes.heading}>Award winning real estate company in Dubai</Typography>

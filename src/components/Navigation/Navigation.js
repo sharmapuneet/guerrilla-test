@@ -3,7 +3,7 @@ import {  Link } from "react-router-dom";
 import { Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
     linkItem: {
       color: "#1E3240",
       float: "left",
