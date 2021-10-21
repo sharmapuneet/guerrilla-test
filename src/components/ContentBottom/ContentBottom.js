@@ -24,7 +24,7 @@ const ContentBottom = () => {
     <div className={classes.root}>
       <Grid container justifyContent="space-between">
         <Grid item xs={12} sm={7}>
-          <img src={leftBg} />
+          <img src={leftBg} style={{ width: "100%" }}/>
         </Grid>
         <Grid item xs={12} sm={5}>
           <Typography variant="h3" className={classes.heading}>Award winning real estate company in Dubai</Typography>

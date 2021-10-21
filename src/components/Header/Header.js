@@ -4,7 +4,7 @@ import { Typography, Button, Grid, Hidden, useMediaQuery } from "@material-ui/co
 import { BrowserRouter as Router } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import backgroundImage from "../../assets/backgroundImage.png";
-import Navigation from "../Navigation/Naviogation";
+import Navigation from "../Navigation/Navigation";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -65,7 +65,7 @@ const Header = () => {
   const theme = useTheme();
 
   return (
-    <div className={classes.header} style={{ backgroundImage: `url(${backgroundImage})` }}>
+    <div className={classes.header} style={{ backgroundImage: `url(${backgroundImage})`, backgroundPosition: "bottom", backgroundSize: "cover" }}>
       <div className={classes.headerMain}>
         <Grid container spacing={2} className={classes.headerTop} justifyContent="space-between">
           <Grid item><img src={logo}></img></Grid>
